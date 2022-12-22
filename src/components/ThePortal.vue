@@ -5,6 +5,7 @@ import {
   MeshBasicMaterial,
   ShaderMaterial,
   Color,
+  Mesh,
 } from 'three';
 import { useRenderLoop, useTexture } from '@tresjs/core';
 import { useGLTF, useTweakPane } from '@tresjs/cientos';
@@ -72,7 +73,7 @@ const portalLightMaterial = new ShaderMaterial({
   side: DoubleSide,
 });
 
-const portalObj = portal as Object3D<Event>;
+const portalObj = portal;
 const bakedMesh = portalObj.children.find((child) => child.name === 'baked');
 (bakedMesh as Mesh).material = bakedMaterial;
 const portalCircle = portalObj.children.find(
