@@ -10,8 +10,8 @@ import {
 import { useRenderLoop, useTexture } from '@tresjs/core';
 import { useGLTF, useTweakPane } from '@tresjs/cientos';
 
-import PortalVertex from '../shaders/vertex.glsl';
-import PortalFragment from '../shaders/fragment.glsl';
+import PortalVertex from '../shaders/portal/vertex.glsl';
+import PortalFragment from '../shaders/portal/fragment.glsl';
 
 const experiment = {
   portalColorStart: '#7030eb',

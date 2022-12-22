@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ThePortal from './ThePortal.vue';
-import { shallowRef } from 'vue';
 import { OrbitControls, useTweakPane } from '@tresjs/cientos';
+import TheFireFlies from './TheFireFlies.vue';
 
 const sceneState = {
   backgroundColor: '#201919',
@@ -44,6 +44,7 @@ sceneFolder
     <TresScene>
       <TresFog :args="['#201919', 0.1, 75]" />
       <ThePortal />
+      <TheFireFlies />
       <TresAmbientLight
         :position="[10, 10, 10]"
         :intensity="1.5"
